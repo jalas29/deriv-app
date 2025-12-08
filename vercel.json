@@ -1,16 +1,12 @@
 {
-    "routes": [{ "handle": "filesystem" }, { "src": "/(.*)", "dest": "/index.html" }]
-}
-
-{
-  "build": {
-    "env": {
-      "VERCEL_NODE_VERSION": "18"
-    }
-  },
   "functions": {
     "api/**": {
       "runtime": "nodejs18.x"
+    }
+  },
+  "build": {
+    "env": {
+      "VERCEL_NODE_VERSION": "18"
     }
   }
 }
